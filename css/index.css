@@ -1,0 +1,11 @@
+/*SELECTORES CSS */
+/*Selector de etiqueta (directament amb
+el nom de l'etiqueta del HTML)*/
+header{ /*selector css*/
+  height: 170px; /*Nom de la propietat : valor propietat*/
+  background-color: red;
+}
+h1{
+  color: blue;
+  font-size: 30px;
+}
