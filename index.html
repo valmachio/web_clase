@@ -12,14 +12,30 @@
     <title>Web Cibernarium</title>
     <!-- LINK del arxiu "index.css"-->
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet"><!--Google Fonts-->
+    <script src="js/index.js"></script><!--Link arxiu JS-->
   </head>
   <!-- Tota la part del contingut visual de la web -->
   <body>
     <!-- Estructura correcta per HTML5-->
     <!-- capçalera-->
     <header>
-      <h1>El meu títol </h1>
-      <h1>El meu títol 2 </h1>
+      <img src="img/logo.jpg" id="logo">
+      <nav><!--Elements de navegació amb etiquetes de links a-->
+        <a href="https://cibernarium.barcelonactiva.cat/">Cibernarium</a> |
+        <a href="https://www.google.com/">Google</a>
+      </nav>
     </header>
+    <main><!--Contingut central-->
+      <h1>Formulari<h1><!--Títol 1-->
+      <form onsubmit="return false" ><!--Formulari amb input text, text area i button-->
+        <input type="text" maxlength="25" placeholder="nom"id="nom"><!--onkeyup="validar()" decta quan deixes anar un butó-->
+        <textarea placeholder="missatge"></textarea>
+        <button onclick="validar()">Enviar</button><!--L'element botton té assignat 'onclick' què crida la funció de l'index.js-->
+      </form>
+    </main>
+    <footer><!--Contintut de peu de pàgina-->
+      <p>Web curs del cibernàrium &copy;2019</p>
+    </footer>
   </body>
 </html>

@@ -1,11 +1,64 @@
+body{
+  font-family: 'Chilanka', cursive;
+  }
+/*CAPÇALERA*/
 /*SELECTORES CSS */
 /*Selector de etiqueta (directament amb
 el nom de l'etiqueta del HTML)*/
 header{ /*selector css*/
-  height: 170px; /*Nom de la propietat : valor propietat*/
-  background-color: red;
+  height: 120px; /*Nom de la propietat : valor propietat*/
+  /* background-color: #ebffff; */
+  border-bottom: 1px solid black;
+  /*Posicionament elements del Header*/
+  /*Display flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;/*Apliquem padding (marge interior)*/
+  padding: 30px;
 }
-h1{
-  color: blue;
-  font-size: 30px;
+a{
+  text-decoration: none; /*Treu el subratllat*/
+}
+a:hover{
+  text-decoration: underline;
+  color: black;
+}
+/*Efectes de butons*/
+/*fI CAPÇALERA*/
+/*Selector per ID amb el símbol #*/
+#logo{
+  widh: 50px;
+  height: 50px;
+}
+/*INICI CONTINGUT PRINCIPAL*/
+main{
+  text-align: center;
+}
+/*Estils del formulari*/
+form{
+  border: 1px solid black;
+  width: 60%; /* 2 valors: 1(adalt-abaix, dreta-esquerra)*/
+  padding: 20px;
+  margin:30px auto; /* Marge per centrar el form*/
+}
+/*Mides elements del form*/
+input, textarea, button {
+  width: 100%;
+}
+textarea {
+  resize: none;
+  height: 150px;
+}
+button{
+  background-color: pink;
+  padding: 8px;
+  border: 0px;
+}
+footer{
+  text-align: center;
+  color: black;
+  /*background-color: #403a3a;*/
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 30px;
 }
