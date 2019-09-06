@@ -33,26 +33,24 @@ a:hover{
 /*INICI CONTINGUT PRINCIPAL*/
 main{
   text-align: center;
+  margin: 50px;
 }
-/*Estils del formulari*/
+/*Fomrm de SignIN-OU*/
 form{
-  border: 1px solid black;
-  width: 60%; /* 2 valors: 1(adalt-abaix, dreta-esquerra)*/
-  padding: 20px;
-  margin:30px auto; /* Marge per centrar el form*/
+  width: 25%;
 }
-/*Mides elements del form*/
-input, textarea, button {
+  input, button {
   width: 100%;
-}
-textarea {
-  resize: none;
-  height: 150px;
-}
-button{
-  background-color: pink;
-  padding: 8px;
-  border: 0px;
+  margin: 10px;
+  }
+  button{
+    background-color: pink;
+    padding: 8px;
+    border: 0px;
+  }
+#contenidor_index{
+  display: flex;
+  justify-content: space-around;
 }
 footer{
   text-align: center;

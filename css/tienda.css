@@ -1,0 +1,12 @@
+/*Selector de classe (propietats dels estils comuns per tots els elements)*/
+.producte{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+#contenidor{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}

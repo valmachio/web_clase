@@ -1,0 +1,43 @@
+<!-- ESTRUCTURA HTML5 d'una web  -->
+<!-- Li diem al document que és tipus HTML -->
+<!DOCTYPE html>
+<!-- Etiqueta "HTML" amb atribut "lang"-->
+<html lang="ca">
+  <!--L'etiqueta "head" no forma part de
+  la visualització del la web, només de la configuració-->
+  <head>
+    <!-- "meta": normalment per configuració de SEO i caràters especials -->
+    <meta charset="utf-8">
+    <!-- Nom del titul de la web a la pestanya de la finestra -->
+    <title>Web Cibernarium</title>
+    <!-- LINK del arxiu "index.css"-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contacte.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet"><!--Google Fonts-->
+    <script src="js/contacte.js"></script><!--Link arxiu JS-->
+  </head>
+  <!-- Tota la part del contingut visual de la web -->
+  <body>
+    <!-- Estructura correcta per HTML5-->
+    <!-- capçalera-->
+    <header>
+      <a href="index.html"><img src="img/logo.jpg" id="logo"></a>
+      <nav><!--Elements de navegació amb etiquetes de links a-->
+        <a href="index.html">Inicio</a> |
+        <a href="tienda.html">Botiga</a> |
+        <a href="contacte.html">Contacte</a>
+      </nav>
+    </header>
+    <main><!--Contingut central-->
+      <h1>Entrar<h1><!--Títol 1-->
+      <form onsubmit="return false" ><!--Formulari amb input text, text area i button-->
+        <input type="text" maxlength="25" placeholder="nom"id="nom"><!--onkeyup="validar()" decta quan deixes anar un butó-->
+        <textarea placeholder="missatge" id="missatge"></textarea>
+        <button onclick="validar()">Enviar</button><!--L'element botton té assignat 'onclick' què crida la funció de l'index.js-->
+      </form>
+    </main>
+    <footer><!--Contintut de peu de pàgina-->
+      <p>Web curs del cibernàrium &copy;2019</p>
+    </footer>
+  </body>
+</html>
